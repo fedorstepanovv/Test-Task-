@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class CountryCard extends StatelessWidget {
   final String name;
@@ -28,7 +29,7 @@ class CountryCard extends StatelessWidget {
                 Text(name),
                 Text(subregion),
                 Text(alpha2code),
-                Text(flagUrl),
+                SvgPicture.network(flagUrl,height: 50,width: 50,)
               ],
             ),
           ),
